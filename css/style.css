@@ -106,3 +106,69 @@
     border: none;
     border-radius: 5px;
 }
+
+@media(max-width:768px){
+
+    html{
+        font-size: 15px;
+    }
+
+    .pro-cont .pro{
+        background-color: rgb(48, 47, 47) ;
+        color: white;
+        width: 140px;
+        font-size: 10px;
+    }
+
+    .pro-cont .pro img{
+        width: 100%;
+        height: 100px;
+    }
+
+    .fourth-sec .btn{
+        font-size: 9px;
+    }
+
+    .proName1,.proName2,.proName3,.proName4,.proName5,.proName6{
+        font-size: 15px;
+    }
+
+    #carouselExampleSlidesOnly img{
+        height: 300px;
+        width: 100%;
+    }
+
+}
+
+@media(max-width:340px){
+
+    html{
+        font-size: 10px;
+    }
+
+    .pro-cont .pro{
+        background-color: rgb(48, 47, 47) ;
+        color: white;
+        width: 140px;
+        font-size: 10px;
+    }
+
+    .pro-cont .pro img{
+        width: 100%;
+        height: 100px;
+    }
+
+    .fourth-sec .btn{
+        font-size: 9px;
+    }
+
+    .proName,.proName2,.proName3,.proName4,.proName5{
+        font-size: 15px;
+    }
+
+    #carouselExampleSlidesOnly img{
+        height: 200px;
+        width: 100%;
+    }
+
+}
