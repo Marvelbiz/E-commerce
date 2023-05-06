@@ -107,10 +107,25 @@
     border-radius: 5px;
 }
 
+hr{
+    margin: 0;
+    color: white;
+}
+
+.lasp{
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
 @media(max-width:768px){
 
     html{
-        font-size: 15px;
+        font-size: 12px;
+    }
+
+    .lasp{
+       font-size: 12px;
     }
 
     .pro-cont .pro{
@@ -133,9 +148,88 @@
         font-size: 15px;
     }
 
+
     #carouselExampleSlidesOnly img{
         height: 300px;
         width: 100%;
+    }
+
+}
+
+@media(max-width:425px){
+
+    .pro-cont{
+        width: 100%;
+    }
+
+    .pro{
+        width: 33%;
+    }
+}
+
+@media(max-width:375px){
+
+    .pro-cont{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    html{
+        font-size: 10px;
+    }
+
+    .pro-cont .pro{
+        background-color: rgb(48, 47, 47) ;
+        color: white;
+        width: 140px;
+        font-size: 10px;
+    }
+
+    .pro-cont .pro img{
+        width: 100%;
+        height: 100px;
+    }
+
+    .fourth-sec .btn{
+        font-size: 9px;
+    }
+
+    .proName,.proName2,.proName3,.proName4,.proName5{
+        font-size: 15px;
+    }
+
+    .footer-cont{
+        font-size: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .btns{
+        padding: 3px;
+    }
+
+    .foot-input{
+        width: 100px;
+        height: 30px;
+        padding: 0;
+    }
+
+    .foot-cont{
+        width: 33.3%;
+        margin: 4px;
+    }
+
+    .foot-cont h4{
+       font-size: 13px;
+    }
+
+    .foot-cont h2{
+        font-size: 14px;
+    }
+
+    .lasp{
+        font-size: 10px;
     }
 
 }

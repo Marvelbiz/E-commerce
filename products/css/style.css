@@ -59,6 +59,14 @@
     transition: 1s;
 }
 
+p{
+    margin: 0;
+}
+
+div{
+    margin: 0;
+}
+
 
 .prc{
     border: 1px solid rgb(9, 180, 9);
@@ -83,7 +91,27 @@
     border-radius: 5px;
 }
 
+hr{
+    margin: 0;
+    color: white;
+}
+
+.lasp{
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+
 @media(max-width:768px){
+    
+    html{
+        font-size: 12px;
+    }
+
+    .lasp{
+       font-size: 12px;
+    }
 
     .pro-cont .pro{
         background-color: rgb(48, 47, 47) ;
@@ -119,10 +147,32 @@
         height: 30px;
         width: 50px;
         margin: 0;
+    }
+
+}
+
+@media(max-width:425px){
+
+    .pro-cont{
+        width: 100%;
+    }
+
+    .pro{
+        width: 33%;
     }
 }
 
-@media(max-width:340px){
+@media(max-width:375px){
+
+    .pro-cont{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    html{
+        font-size: 10px;
+    }
 
     .pro-cont .pro{
         background-color: rgb(48, 47, 47) ;
@@ -159,4 +209,38 @@
         width: 50px;
         margin: 0;
     }
+
+    .footer-cont{
+        font-size: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .btns{
+        padding: 3px;
+    }
+
+    .foot-input{
+        width: 100px;
+        height: 30px;
+        padding: 0;
+    }
+
+    .foot-cont{
+        width: 33.3%;
+        margin: 4px;
+    }
+
+    .foot-cont h4{
+       font-size: 13px;
+    }
+
+    .foot-cont h2{
+        font-size: 14px;
+    }
+
+    .lasp{
+        font-size: 10px;
+    }
+    
 }

@@ -23,7 +23,7 @@ let proDes6 = document.querySelector('.proDes6');
 let proPrice6 = document.querySelector('.proPrice6');
 let proImg6 = document.querySelector('.proImg6');
 
-fetch('https://dummyjson.com/products')
+fetch('https://dummyjson.com/products?limit=0&skip=0')
 .then(data =>{
     return data.json();
 }).then(myData =>{
@@ -40,18 +40,18 @@ fetch('https://dummyjson.com/products')
     proDes3.textContent = myData["products"][4]["description"];
     proPrice3.textContent = "$ " + myData["products"][4]["price"];
     proImg3.src= myData["products"][4]["images"][0];
-    proName4.textContent = myData["products"][9]["title"];
-    proDes4.textContent = myData["products"][9]["description"];
-    proPrice4.textContent = "$ " + myData["products"][9]["price"];
-    proImg4.src = myData["products"][9]["images"][0]; 
+    proName4.textContent = myData["products"][76]["title"];
+    proDes4.textContent = myData["products"][76]["description"];
+    proPrice4.textContent = "$ " + myData["products"][76]["price"];
+    proImg4.src = myData["products"][76]["images"][0]; 
     proName5.textContent = myData["products"][10]["title"];
     proDes5.textContent = myData["products"][10]["description"];
     proPrice5.textContent = "$ " + myData["products"][10]["price"];
     proImg5.src= myData["products"][10]["images"][0];
-    proName6.textContent = myData["products"][1]["title"];
-    proDes6.textContent = myData["products"][1]["description"];
-    proPrice6.textContent = "$ " + myData["products"][1]["price"];
-    proImg6.src = myData["products"][1]["images"][0]; 
+    proName6.textContent = myData["products"][51]["title"];
+    proDes6.textContent = myData["products"][51]["description"];
+    proPrice6.textContent = "$ " + myData["products"][51]["price"];
+    proImg6.src = myData["products"][51]["images"][0]; 
 
     console.log(myData)
 }).catch(err =>{
