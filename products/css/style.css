@@ -29,7 +29,18 @@
     
 }
 
+.srcPro{
+    background-color: rgb(48, 47, 47) ;
+    color: white;
+    width: 250px;
+}
+
 .pro-cont .pro img{
+    width: 100%;
+    height: 200px;
+}
+
+.srcImg{
     width: 100%;
     height: 200px;
 }
@@ -153,12 +164,88 @@ hr{
 
 @media(max-width:425px){
 
-    .pro-cont{
+
+    .srcPro{
+        background-color: rgb(48, 47, 47) ;
+        color: white;
+        width: 180px;
+        font-size: 10px;
+    }
+
+    .srcImg{
         width: 100%;
+        height: 100px;
+    }
+
+    .pro-cont .pro{
+        background-color: rgb(48, 47, 47) ;
+        color: white;
+        width: 180px;
+        font-size: 10px;
+    }
+
+    html{
+        font-size: 12px;
+    }
+
+    .pro-cont{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 10px;
     }
 
     .pro{
         width: 33%;
+    }
+
+    .footer-cont{
+        font-size: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .btns{
+        padding: 3px;
+    }
+
+    .foot-input{
+        width: 100px;
+        height: 30px;
+        padding: 0;
+    }
+
+    .foot-cont{
+        width: 33.3%;
+        margin: 4px;
+    }
+
+    .foot-cont h4{
+       font-size: 13px;
+    }
+
+    .foot-cont h2{
+        font-size: 14px;
+    }
+
+    .lasp{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:404px){
+    .srcPro{
+        background-color: rgb(48, 47, 47) ;
+        color: white;
+        width: 150px;
+        font-size: 10px;
+    }
+
+    .pro-cont .pro{
+        background-color: rgb(48, 47, 47) ;
+        color: white;
+        width: 150px;
+        font-size: 10px;
     }
 }
 
@@ -192,11 +279,6 @@ hr{
 
     .proName,.proName2,.proName3,.proName4,.proName5{
         font-size: 15px;
-    }
-
-    #offcanvasNavbar{
-        width: 50%;
-        font-size: 10px;
     }
 
     .search{

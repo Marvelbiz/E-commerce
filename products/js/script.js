@@ -24,18 +24,60 @@ let proImg5 = document.querySelectorAll('.proImg5');
 
 
 function Search(e){
-    fetch(`https://dummyjson.com/products?limit=0&skip=0/search?q=${search.value}`)
+    fetch(`https://dummyjson.com/products/search?q=${search.value}`)
     .then(res => res.json())
     .then(myData => {
 
-        console.log(myData);
+        let proCont = document.getElementById("pro-cont");
+
+        for(i=0;i<myData["products"].length;i++){
+            let pro = document.createElement("div");
+            let img = document.createElement("img");
+            let m3 = document.createElement("div");
+            let h2 = document.createElement("h2");
+            let p = document.createElement("p");
+            let priceBtn = document.createElement("div");
+            let price = document.createElement("div");
+            let btn = document.createElement("div");
+
+            img.src=myData["products"][i]["images"][0];
+            h2.textContent=myData["products"][i]["title"];
+            p.textContent=myData["products"][i]["description"];
+            price.textContent = "$" + myData["products"][i]["price"];
+            btn.textContent = "Add to Cart"
+
+            proCont.classList.add("pro-cont", "mx-2", "d-flex", "flex-wrap",  "text-center")
+            btn.classList.add("btn","btn-success");
+            price.classList.add("proPrice", "prc");
+            priceBtn.classList.add("d-flex", "justify-content-around");
+            m3.classList.add("m-3");
+            h2.classList.add("proName");
+            p.classList.add("proDes");
+            img.classList.add("proImg", "p-2","srcImg");
+            pro.classList.add("srcPro","bg-secondary", "m-1")
+
+
+            
+            priceBtn.appendChild(price);
+            priceBtn.appendChild(btn);
+            m3.appendChild(h2);
+            m3.appendChild(p);
+            m3.appendChild(priceBtn);
+            pro.appendChild(img);
+            pro.appendChild(m3);
+            proCont.appendChild(pro);
+
+        }
+
     }).catch(err =>{
         console.log(err)
     })
 
     e.preventDefault();
 };
-searchBtn.addEventListener('click',Search)
+
+
+searchBtn.addEventListener('click',Search);
 
 fetch('https://dummyjson.com/products?limit=0&skip=0')
 .then(data =>{

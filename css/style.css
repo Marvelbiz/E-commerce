@@ -158,12 +158,65 @@ hr{
 
 @media(max-width:425px){
 
+    .pro-cont .pro{
+        background-color: rgb(48, 47, 47) ;
+        color: white;
+        width: 180px;
+        font-size: 10px;
+    }
+
     .pro-cont{
-        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 10px;
     }
 
     .pro{
         width: 33%;
+    }
+
+    .footer-cont{
+        font-size: 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .btns{
+        padding: 3px;
+    }
+
+    .foot-input{
+        width: 100px;
+        height: 30px;
+        padding: 0;
+    }
+
+    .foot-cont{
+        width: 33.3%;
+        margin: 4px;
+    }
+
+    .foot-cont h4{
+       font-size: 13px;
+    }
+
+    .foot-cont h2{
+        font-size: 14px;
+    }
+
+    .lasp{
+        font-size: 10px;
+    }
+}
+
+@media(max-width:404px){
+    
+    .pro-cont .pro{
+        background-color: rgb(48, 47, 47) ;
+        color: white;
+        width: 150px;
+        font-size: 10px;
     }
 }
 
